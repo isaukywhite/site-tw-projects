@@ -5,7 +5,7 @@ import Footer from "@/components/Layout/Footer.vue";
 </script>
 
 <template>
-  <main class="h-[100dvh] flex flex-col justify-around lg:px-8">
+  <main class="min-h-[100dvh] flex flex-col justify-around lg:px-8 mb-[72px] lg:mb-0">
     <Breadcrumb />
     <RouterView />
     <Footer />

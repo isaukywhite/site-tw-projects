@@ -25,7 +25,7 @@
 
 	:root {
 		--foreground: #ffffff;
-
+		--text-foreground: #111111;
 		--muted: #111111;
 		--muted-foreground: rgb(141, 67, 14);
 
@@ -63,7 +63,7 @@
 		--positive-darker: #21a26e;
 		--negative-lighter: #db6868;
 		--negative-darker: #bf2d2d;
-		--background: #f2f7fc;
+		--background: #d4d5d5;
 		--secondary-darker: #ffffff;
 		--fg: #ffffff;
 		--fg-dim: #bac8d2;
