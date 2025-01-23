@@ -1,6 +1,6 @@
 FROM node:18-alpine AS build-stage
 WORKDIR /app
-COPY package.json package-lock.json ./
+COPY package.json ./
 RUN apk add --no-cache python3 make g++
 RUN npm install --legacy-peer-deps
 COPY . .
