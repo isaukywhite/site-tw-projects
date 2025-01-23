@@ -4,7 +4,7 @@ COPY package.json ./
 COPY bun.lockb ./
 RUN npm install -g bun && bun install
 COPY . .
-RUN bun run build
+RUN bun build
 
 FROM nginx:alpine
 COPY --from=build-stage /app/dist /usr/share/nginx/html
