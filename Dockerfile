@@ -1,10 +1,9 @@
 FROM node:alpine AS build-stage
 WORKDIR /app
 COPY package.json ./
-COPY bun.lockb ./
-RUN npm install -g bun && bun install
+RUN npm install
 COPY . .
-RUN bun build
+RUN npm run build
 
 FROM nginx:alpine
 COPY --from=build-stage /app/dist /usr/share/nginx/html
