@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #18181b;
+    color: #f4f4f5;
+}
+
+header {
+    background: #9146ff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+main {
+    padding: 20px;
+}
+
+main .description h2 {
+    color: #9146ff;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #282828;
+    color: #bbb;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
