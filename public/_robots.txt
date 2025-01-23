@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /private/
+Allow: /
+Sitemap: https://twitchprojects.com/sitemap.xml

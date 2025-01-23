@@ -1,7 +1,12 @@
+FROM node:alpine AS build-stage
+WORKDIR /app
+COPY package.json ./
+COPY bun.lockb ./
+RUN npm install -g bun && bun install
+COPY . .
+RUN bun run build
+
 FROM nginx:alpine
-WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-COPY ./src/ .
-EXPOSE 8080
-RUN sed -i 's/80;/8080;/' /etc/nginx/conf.d/default.conf
+COPY --from=build-stage /app/dist /usr/share/nginx/html
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
