@@ -7,7 +7,7 @@ export const BadgesDto: BadgeProps[] = [
 		github: "https://github.com/isaukywhite",
 		nickname: "isaukywhite",
 		description: "Senior Fullstack Developer | Driven by Technology, Shaping the Future with AI",
-		startDate: "Maio de 2019",
+		startDate: "Janeiro de 2012",
 	},
 	{
 		name: "Victor Navarro",
