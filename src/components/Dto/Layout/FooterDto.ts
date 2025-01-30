@@ -1,5 +1,5 @@
-import { House, Ellipsis } from "lucide-vue-next";
-import type { FunctionalComponent, HTMLAttributes, VNodeProps } from "vue";
+import {House, Ellipsis} from "lucide-vue-next";
+import type {FunctionalComponent, HTMLAttributes, VNodeProps} from "vue";
 
 interface FooterDto {
 	title: string;

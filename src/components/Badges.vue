@@ -4,15 +4,15 @@ import Link from "@/tags/Link.vue";
 import HoverCard from "@/components/HoverCard.vue";
 
 export interface BadgeProps {
-    name: string;
-    occupation: string;
-    github: string;
-    nickname: string;
-    description: string;
-    startDate: string;
+	name: string;
+	occupation: string;
+	github: string;
+	nickname: string;
+	description: string;
+	startDate: string;
 }
 
-const props = defineProps<{ badges: BadgeProps[] }>();
+const props = defineProps<{badges: BadgeProps[]}>();
 </script>
 
 <template>

@@ -1,30 +1,30 @@
 <script lang="ts" setup>
-import { computed } from "vue";
-import { useRoute, useRouter } from "vue-router";
+import {computed} from "vue";
+import {useRoute, useRouter} from "vue-router";
 import RouterLink from "@/tags/RouterLink.vue";
 import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
+	Breadcrumb,
+	BreadcrumbItem,
+	BreadcrumbLink,
+	BreadcrumbList,
+	BreadcrumbPage,
+	BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
 const route = useRoute();
 const router = useRouter();
 
 const breadcrumbs = computed(() => {
-    const paths = route.path.split("/").filter((path) => path);
-    const breadcrumbArray = paths.map((path, index) => {
-        const to = `/${paths.slice(0, index + 1).join("/")}`;
-        const routeMatch = router.resolve(to);
-        return {
-            text: routeMatch.name || path,
-            to,
-        };
-    });
-    return [ { text: "Página Inicial", to: "/" }, ...breadcrumbArray ];
+	const paths = route.path.split("/").filter((path) => path);
+	const breadcrumbArray = paths.map((path, index) => {
+		const to = `/${paths.slice(0, index + 1).join("/")}`;
+		const routeMatch = router.resolve(to);
+		return {
+			text: routeMatch.name || path,
+			to,
+		};
+	});
+	return [{text: "Página Inicial", to: "/"}, ...breadcrumbArray];
 });
 </script>
 

@@ -2,9 +2,9 @@
 import RouterLink from "@/tags/RouterLink.vue";
 import ToggleTheme from "@/components/ToggleTheme.vue";
 import Link from "@/tags/Link.vue";
-import { FooterDto } from "@/components/Dto/Layout/FooterDto";
-import { useRoute } from "vue-router";
-import { GithubLogoIcon } from "@radix-icons/vue";
+import {FooterDto} from "@/components/Dto/Layout/FooterDto";
+import {useRoute} from "vue-router";
+import {GithubLogoIcon} from "@radix-icons/vue";
 
 const route = useRoute();
 </script>
