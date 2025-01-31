@@ -1,7 +1,21 @@
 <script setup lang="ts">
-import {RouterView} from "vue-router";
+import { onMounted } from "vue";
+import { RouterView } from "vue-router";
 import Breadcrumb from "@/components/Breadcrumb.vue";
 import Footer from "@/components/Layout/Footer.vue";
+import fetchUserName from "./api/fetchUsername";
+import createUserIfNotExists from "./api/createUserIfNotExists";
+import { useTwitchStore } from "@/stores/useTwitchStore";
+import Cookies from "js-cookie";
+
+onMounted(async () => {
+  const accessToken = Cookies.get("access_token");
+  if (accessToken) {
+    const twitchStore = useTwitchStore();
+    await fetchUserName(accessToken);
+    await createUserIfNotExists(twitchStore.username);
+  }
+});
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 
 const routes = [
@@ -48,6 +48,23 @@ const routes = [
 				"twitch, twitch projects, projects, streamers, gugasilvadev, dev_navarro, isaukywhite, twitch projects for streamers, twitch projects for developers, twitch projects for designers, twitch projects for content creators, twitch projects for gamers, twitch projects for youtubers, twitch projects for influencers, twitch projects for artists, twitch projects for musicians, twitch projects for photographers, twitch projects for videomakers",
 			robots: "index, follow",
 			ogTitle: "Redirect | Twitch projects",
+			ogDescription:
+				"Welcome to Twitch Projects Team, open source projects for the Twitch community and streamers.",
+			ogImage: "/logo.svg",
+		},
+	},
+	{
+		path: "/raffle",
+		name: "Raffle",
+		component: () => import("@/views/RaffleView.vue"),
+		meta: {
+			title: "Raffle | Twitch projects",
+			description:
+				"Welcome to Twitch Projects Team, open source projects for the Twitch community and streamers.",
+			keywords:
+				"twitch, twitch projects, projects, streamers, gugasilvadev, dev_navarro, isaukywhite, twitch projects for streamers, twitch projects for developers, twitch projects for designers, twitch projects for content creators, twitch projects for gamers, twitch projects for youtubers, twitch projects for influencers, twitch projects for artists, twitch projects for musicians, twitch projects for photographers, twitch projects for videomakers",
+			robots: "index, follow",
+			ogTitle: "Raffle | Twitch projects",
 			ogDescription:
 				"Welcome to Twitch Projects Team, open source projects for the Twitch community and streamers.",
 			ogImage: "/logo.svg",

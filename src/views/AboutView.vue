@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Accordion from "@/components/Accordion.vue";
 import Badges from "@/components/Badges.vue";
-import {AccordionDto} from "@/components/Dto/AccordionDto";
-import {BadgesDto} from "@/components/Dto/BadgesDto";
+import { AccordionDto } from "@/components/Dto/AccordionDto";
+import { BadgesDto } from "@/components/Dto/BadgesDto";
 </script>
 
 <template>
